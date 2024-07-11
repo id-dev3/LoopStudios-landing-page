@@ -4,13 +4,47 @@
 @use 'globals/mixins.scss' as *;
 
 header{
-    background: url(../assets/images/desktop/image-hero.jpg) center / cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/desktop/image-hero.jpg) center / cover no-repeat;
     min-height: 100dvh;
+    position: relative;
+    margin-bottom: 5rem;
 
     .navbar-container{
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 3.5rem 5rem;
+
+        .nav-links{
+            .links{
+                font-size: 1.1rem;
+                font-weight: 600;
+                color: #fff;
+                margin-left: 2rem;
+            }
+        }
+    }
+
+    .hero-section{
+        position: relative;
+
+        .hero-text{
+            border: 2px solid #fff;
+            width: 700px;
+            padding: 2rem;
+            margin: 5rem 0 0 5rem;
+            // position: absolute;
+            // top: 50%;
+            // left: 50%;
+            // transform: translate(-50%, -50%);
+
+            h1{
+                font-family: "Josefin Sans", sans-serif;
+                font-weight: 300;
+                text-transform: uppercase;
+                font-size: 5rem;
+                color: #fff;
+            }
+        }
     }
 }
